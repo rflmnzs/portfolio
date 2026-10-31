@@ -121,6 +121,19 @@ details[open] .case-sign::before { content:'−'; }
 .toolbox dl>div { display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:19px 0; border-top:1px solid var(--line); }
 .toolbox dt { font-size:11px; color:var(--muted); padding-top:4px; }
 .toolbox dd { margin:0; font:500 18px/1.5 var(--display); letter-spacing:-.03em; }
+.toolbox-mark { color:var(--blue); font:500 30px/1 var(--display); }
+.method { border-top:1px solid var(--line); }
+.method-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; border:1px solid var(--line); background:var(--line); }
+.method-card { background:#18191f; padding:28px; min-height:410px; display:flex; flex-direction:column; }
+.method-number { color:var(--blue); font:600 12px/1 var(--display); margin-bottom:55px; }
+.method-card h3 { font-size:25px; line-height:1.15; letter-spacing:-.04em; margin-bottom:18px; }
+.method-card p { color:var(--muted); font-size:13px; }
+.method-card .method-result { color:var(--ink); margin-top:14px; }
+.method-tags { margin-top:auto; padding-top:24px; color:var(--blue); font:500 11px/1.6 var(--display); }
+.method-tags span { color:var(--muted); padding:0 5px; }
+.prompt-card { margin-top:14px; padding:14px; background:#101114; border:1px solid var(--line); }
+.prompt-card .micro { color:var(--muted); font-size:9px; }
+.prompt-card pre { margin:12px 0 0; white-space:pre-wrap; font:11px/1.7 'Courier New',monospace; color:var(--ink); }
 .contact { background:#15131d; color:var(--ink); padding:42px 0 64px; }
 .contact-top { display:flex; justify-content:space-between; gap:20px; color:var(--muted); }
 .contact h2 { font-size:clamp(50px,8.5vw,126px); margin:54px 0 42px; line-height:.98; }
@@ -197,6 +210,9 @@ footer { padding-block:26px; display:flex; justify-content:space-between; gap:20
   .case-question { font-size:23px; }
   .about { grid-template-columns:1fr; gap:40px; }
   .about h2 { font-size:42px; }
+  .method-grid { grid-template-columns:1fr; }
+  .method-card { min-height:0; }
+  .method-number { margin-bottom:34px; }
   .contact-top { flex-direction:column; gap:8px; font-size:10px; }
   .contact h2 { margin-block:40px; }
   .contact-bottom { align-items:start; flex-direction:column; gap:30px; }
